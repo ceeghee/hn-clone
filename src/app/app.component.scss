@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Verdana:400);
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+$mobile-only: "only screen and (max-width:768px)";
+
+body{
+	margin-bottom: 0;
+
+	@media #{$mobile-only}{
+		margin:0;
+	}
+}
+
+#content{
+	background-color: #F6F6Ef;
+	position: relative;
+	width: 85%;
+	min-height: 80px;
+	margin: 0 auto;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	height: 100px;
+
+	@media #{$mobile-only}{
+		width: 100%;
+	}
+
+}
