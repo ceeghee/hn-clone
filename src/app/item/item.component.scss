@@ -1,0 +1,55 @@
+$mobile-only: "only screen and (max-width : 768px)";
+$path--rel      : "";
+
+@mixin background($imgpath,$repeat: no-repeat) {
+    background: {
+        image: url('#{$path--rel}/#{$imgpath}');
+        repeat: $repeat;
+    }
+}
+
+p {
+  margin: 2px 0;
+  @media #{$mobile-only} {
+    margin-bottom: 5px;
+    margin-top: 0;
+  }
+}
+
+.title {
+  font-size: 10pt;
+  color: #828282;
+}
+
+a {
+  color: #000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.upvote{
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  margin: 3px 2px 6px;
+  /*@include background("assets/grayarrow.gif");*/
+}
+
+.item{
+
+}
+
+.subtext{
+	font-size: 7pt;
+  color: #828282;
+  /*letter-spacing: 0.5px;*/
+  a {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.domain{
+	font-size: 8pt;
+}

@@ -1,0 +1,14 @@
+<div *ngIf="!items">
+	Loading...
+</div>
+<div *ngIf="items">
+	<ol>
+    <li class="post" *ngFor="let item of items">
+      <app-item class="item-block" [item]="item"></app-item>
+    </li>
+  </ol>
+
+  <div class="nav">
+  	<a href="">More</a>
+  </div>
+</div>

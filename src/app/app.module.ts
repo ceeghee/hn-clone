@@ -3,23 +3,29 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
-import { TestComponent } from './test/test.component';
+import { ItemComponent } from './item/item.component';
+import { TopstoriesComponent } from './topstories/topstories.component';
+import { FooterComponent } from './footer/footer.component';
 
 import { AppComponent } from './app.component';
 import { GraphQLModule } from './graphql.module';
 import { HttpClientModule } from '@angular/common/http';
+import { MomentModule } from 'ngx-moment';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    TestComponent
+    TopstoriesComponent,
+    ItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     GraphQLModule,
-    HttpClientModule
+    HttpClientModule,
+    MomentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

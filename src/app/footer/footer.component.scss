@@ -1,0 +1,47 @@
+$mobile-only: "only screen and (max-width : 768px)";
+
+#footer{
+	position: relative;
+  padding: 10px;
+  height: 83px;
+  border-top: 1.5px solid #ff6600;
+  letter-spacing: 0.5px;
+  text-align: center;
+
+  a.heading{
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 13px;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  .subheading{
+  	a{
+  		color: #000000;
+	    text-decoration: none;
+	    /*padding: 10px;*/
+	    display: inline-block;
+	    font-size: 10.6px;
+	    &:hover {
+	      text-decoration: none;
+	    }
+  	}
+  }
+
+  .search{
+  	font-size: 13px;
+  	color: #828282;
+  }
+
+  @media #{$mobile-only} {
+    /*display: none;*/
+    height: 120px;
+    input{
+		width: 90%;
+		font-size: 16px;
+	}
+  }
+}

@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TestComponent } from './test/test.component';
+import { TopstoriesComponent } from './topstories/topstories.component';
 
 const routes: Routes = [
 						{
 							path:'', 
-							component: TestComponent
+							component: TopstoriesComponent,
+							pathMatch: 'full'
 						}
 					];
 

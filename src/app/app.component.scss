@@ -11,15 +11,15 @@ body{
 	}
 }
 
-#content{
+#container{
 	background-color: #F6F6Ef;
 	position: relative;
 	width: 85%;
-	min-height: 80px;
+	min-height: 80%;
 	margin: 0 auto;
 	font-family: Verdana, Geneva, sans-serif;
 	font-size: 10px;
-	height: 100px;
+	height: 100%;
 
 	@media #{$mobile-only}{
 		width: 100%;

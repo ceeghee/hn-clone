@@ -1,3 +1,27 @@
-<div>
-	
+<div *ngIf="item">
+	<div class="item">
+		<p class="title">
+			<a href=""><span class="upvote"><img src="assets/grayarrow.gif"></span></a>
+			<span><a href="">{{item.title}}&nbsp;</a></span>
+			<span class="domain" *ngIf="item.url">({{formatUrl(item.url)}})</span>
+		</p>
+		<div class="subtext">
+			<span>{{item.points}} points by <a href="" class="subtext">{{item.by.id}}</a></span>
+		      <span>
+		        <span>&nbsp;<a href="" class="subtext">{{item.timeISO | amTimeAgo}}</a></span>
+		        <span> |
+		          <a href="" class="subtext">hide</a>
+		          |
+		          <a href="" class="subtext">
+		            <span *ngIf="item.descendants !== 0">
+		              {{item.descendants}}
+		              <span *ngIf="item.descendants === 1">comment</span>
+		              <span *ngIf="item.descendants > 1">comments</span>
+		            </span>
+		            <span *ngIf="item.descendants === 0">discuss</span>
+		          </a>
+		        </span>
+		      </span>
+		</div>
+	</div>
 </div>
