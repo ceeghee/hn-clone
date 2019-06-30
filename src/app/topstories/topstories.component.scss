@@ -41,12 +41,11 @@ ol {
   padding: 10px 40px;
   margin-top: 5px;
   font-size: 10pt;
-  color: #000000;
   a {
-    color: #828282;
+    color: #5C5C5C;
     text-decoration: none;
     @media #{$mobile-only} {
-      color: #828282;
+      color: #000000;
       text-decoration: none;
     }
   }
